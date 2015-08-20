@@ -1,8 +1,9 @@
 package _record;
 
-import java.util.*;
-import java.io.*;
+import java.io.Serializable;
+import java.util.HashMap;
 
+@SuppressWarnings("ALL")
 public class Course implements Serializable{
 	public static Course[][][] list;
 	public static int[][] courseCount;
@@ -23,7 +24,7 @@ public class Course implements Serializable{
 	public static int START_H = 8;
 	public static int START_M = 0;
 	public static final int MAX_SLOT = 15;
-	public static final int MAX_SESSION = 120;
+    public static final int MAX_SESSION = 150;
 
 	public static final int L = 0;
 	public static final int LA = 1;
@@ -31,10 +32,10 @@ public class Course implements Serializable{
 	
 	public static final int SCHOOL_NUM = 5;
 	public static final int DEPT_NUM = 16;
-	public static final int MAX_COURSE = 120;
-	
-	
-	public final Session[][] sessions;
+    public static final int MAX_COURSE = 150;
+
+
+    public final Session[][] sessions;
 	public final int num;
 	public final String name;
 	public final String code;
@@ -46,10 +47,10 @@ public class Course implements Serializable{
 	static {
 		init();
 	}
-	
-	
-	public String getName() {
-		return name;
+
+
+    public String getName() {
+        return name;
 	}
 	
 	public String getCode() {

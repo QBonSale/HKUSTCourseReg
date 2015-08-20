@@ -1,9 +1,0 @@
-SHSS 1010 - First-year Seminar (1 unit)
-Section	Date & Time	Room	Instructor	Quota	Enrol	Avail	Wait	Remarks
-T1 (3550)	Fr 2:00PM - 3:50PM	Rm 3412, Lift 17-18 (38)	BAARK, Erik
-KU, Shuk Mei Agnes
-LIU, Tik Sang
-SING, Ming
-SO, Alvin Yiu-cheong
-YIP, Kam Ming	42	0	42	0	 
-COURSE INFO

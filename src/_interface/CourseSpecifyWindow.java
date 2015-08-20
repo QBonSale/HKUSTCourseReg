@@ -1,14 +1,12 @@
 package _interface;
 
 
+import _record.Course;
+
 import javax.swing.*;
 
-import java.awt.*;
-import _record.Course;
-import _processor.Register;
-import java.awt.event.*;
 
-
+@SuppressWarnings("ALL")
 public class CourseSpecifyWindow extends JFrame{
 	
 	JPanel[] p;

@@ -1,14 +1,16 @@
 package _record;
 
-import java.net.*;
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class Downloader {
-	static String baseURL = "https://w5.ab.ust.hk/wcq/cgi-bin/1330/subject/";
-	static String baseSave = "2014springPages";
-	public static void download(){
-		String savePlace;
-		String urlAddress;
+    static String baseURL = "https://w5.ab.ust.hk/wcq/cgi-bin/1510/subject/";
+    static String baseSave = "Fall2015";
+
+    public static void download() {
+        String savePlace;
+        String urlAddress;
 		for (int i = 0; i<FileLocater.SCHOOL_NUM; i++)
 			for (int j = 0; j<FileLocater.list[i].deptNum; j++){
 				savePlace = baseSave + "/" + FileLocater.list[i].name + "/" + FileLocater.list[i].dept[j] + ".html"; 
@@ -30,7 +32,7 @@ public class Downloader {
 
              BufferedReader r = new BufferedReader(in);
              File f = new File(savePlace);
-             //if (!f.exists())
+             if (!f.exists())
              f.createNewFile();
              BufferedWriter output = new BufferedWriter(new FileWriter(f));
              String c;
@@ -47,8 +49,7 @@ public class Downloader {
          catch (MalformedURLException e) 
          {
              System.err.println(urlAddress + " is not a parseable URL");
-         }
-         catch (IOException e) 
+         } catch (IOException e)
          {
              System.err.println(e);
          }

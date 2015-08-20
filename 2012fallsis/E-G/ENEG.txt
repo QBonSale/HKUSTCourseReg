@@ -1,9 +1,0 @@
-ENEG 6010 - Advanced Topics in Energy Technology
-Groupbox
-View 3        First  1 of 1  Last 
-T1-TUT(1324)
-Section	Status	 
-Session
-PG
-Days & Times	Room	Instructor	Meeting Dates
-Tu 16:00 - 16:50	Rm 3584, Lift 27-28 (30)	CHEN, Guohua	10/09/2012 - 08/12/2012

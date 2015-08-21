@@ -52,11 +52,18 @@ public class CourseReg {
 
     public static void main(String[] args) throws IOException {
 
+        myWindow = new MyWindow(version, information);
+        myWindow.setVisible(true);
+        myWindow.setSize(400, 150);
+        myWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myWindow.setTitle("CourseReg" + version);
+
         FileInputStream courses;
         try {
             courses = new FileInputStream("courseInfo.ser");
+            myWindow.updateNote("Loading course data...");
         } catch(FileNotFoundException e) {
-            System.out.println("Course Data Not Found. Downloading now...");
+            myWindow.updateNote("Course Data Not Found. Downloading now...");
             updateViaURL();
             courses = new FileInputStream("courseInfo.ser");
         }
@@ -66,15 +73,11 @@ public class CourseReg {
             Course.courseCount = (int[][]) ios.readObject();
             Course.list_code = (HashMap<String, Course>) ios.readObject();
             Course.list = (Course[][][]) ios.readObject();
+            myWindow.updateNote("Done");
         } catch (ClassNotFoundException enfe) {
             System.err.println("class not found exception");
-        }
 
-        myWindow = new MyWindow(version, information);
-        myWindow.setVisible(true);
-        myWindow.setSize(400, 150);
-        myWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        myWindow.setTitle("CourseReg" + version);
+        }
         //Course[] selectedList = Course.list;
         //Register.start(selectedList, Course.courseCount);
     }

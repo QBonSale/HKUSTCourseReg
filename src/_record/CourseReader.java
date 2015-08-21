@@ -131,7 +131,7 @@ public class CourseReader {
                 strLine = in.readLine();
             }
             if (strLine == null) return null;
-            CourseReg.myWindow.updateNote(strLine.substring(4, strLine.length() - 5));
+            //CourseReg.myWindow.updateNote(strLine.substring(4, strLine.length() - 5));
             System.out.println(strLine);
 
             String courseName = "";

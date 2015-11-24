@@ -21,4 +21,4 @@ If you are more comfortable, if not obsessed, with fancy command line, see [PyCo
 1. Apply various changes to the code and migrates to Java 8, (for -> foreach,  anonymous classes -> lambda). Thanks to Intellij.
 
 ####Maintainance
-Feel free to fork. I've warned you:).
+Feel free to fork. It's really a mess:).

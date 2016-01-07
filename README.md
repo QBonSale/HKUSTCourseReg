@@ -1,9 +1,12 @@
 HKUST CourseReg
 ---
-A Legacy from ancient time. Credit to author unknown. Last updated Aug 2015
+A Legacy from ancient time. Credit to author unknown. Last updated Jan 2016.
 
-An java application that finds out all combinations of your intended courses. 
-Hopefully you should be able to run it with Java 8.
+An application that finds out all possible combinations of your intended courses. 
+
+Hopefully you should be able to run it with [Java 8](http://www.java.com/en/download/manual.jsp).
+
+Kindly find the `.jar` application under `out/artifacts`. We've provided a latest `.ser` course information, or you can force update in the menu.
 
 ####Suggested Usage
 Kick start you miserable planning by getting a feasible schedule first.
@@ -14,14 +17,16 @@ If you are more comfortable, if not obsessed, with fancy command line, see [PyCo
 
 
 ####Changelog
-#####Jan2016
+##### Jan 2016
 1. Updated `courseInfo.ser` to Fall 2016
-#####Aug 2015
+
+##### Aug 2015
 1. Updated `courseInfo.ser` to Fall 2015
 1. Fix a crash when COMP courses exceeds the maximum sessions supported for a dept.
 1. Now `Update` will update to the latest semester. Just click the button when data is outdated. If no `courseInfo.ser` is found, it will force update.
 1. Delete all the confusing past courses' data and tests.
 
 ####Maintainance
-Feel free to fork. I've warned you:).
+Feel free to fork. It's really a mess:).
+
 
